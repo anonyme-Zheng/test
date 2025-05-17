@@ -1,4 +1,4 @@
-"""Clean, segment and yield chunks from raw annual‑report documents."""
+"""Clean, segment and yield chunks from raw annual-report documents."""
 from __future__ import annotations
 from pathlib import Path
 import re, itertools
