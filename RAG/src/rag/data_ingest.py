@@ -7,7 +7,7 @@ from typing import Iterable, Dict
 _CHUNK_WORDS = 180  # roughly 512 tokens
 
 def _clean(text:str)->str:
-    text = re.sub(r"\\s+", " ", text)
+    text = re.sub(r"\s+", " ", text)
     return text.strip()
 
 def segment(text:str, source_id:str, chunk_words:int=_CHUNK_WORDS)->Iterable[Dict]:
